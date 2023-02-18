@@ -2,7 +2,7 @@ import TopNavBar from '../top-nav-bar';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 function NotFound(props) {
-    const [currentLink, setCurrentLink] = useState('')
+    const [setCurrentLink] = useState('')
 
     return (
         <>
