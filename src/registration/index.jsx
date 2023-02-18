@@ -17,7 +17,7 @@ function Register(props) {
         if (result.success) {
           //go to dashboard / home
           // localStorage.setItem('user', JSON.stringify(result.userData)) // put back if you want to automatically login
-          window.location.href = "http://localhost:3000/" // change to http://localhost:3000/ if you want to automatically login
+          window.location.href = "https://radiant-bublanina-37e24a.netlify.app/" // change to http://localhost:3000/ if you want to automatically login
         } else {
           // alert user that credentials is invalid
         }

@@ -1,4 +1,4 @@
-export const myExpressURL = 'http://localhost:3005';
+export const myExpressURL = 'http://20.211.37.87/';
 
 
 export const serverRoutes = {
