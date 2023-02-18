@@ -1,0 +1,456 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: "montserrat",sans-serif !important;
+}
+
+body {
+    height: 100vh;
+    background-image: url('/public/background-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.custom-padding-navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.custom-navBG {
+    background-color: #17181af5;
+}
+
+.navbar-toggler {
+    background-color: #b92714;
+}
+
+.wrapper {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.wrapper .card {
+    max-width: 400px;
+    min-height: 450px;
+    margin: 30px;
+    background: rgba(51, 51, 51, 0.521);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0.8rem;
+}
+
+.reg-body {
+    background: rgba(51, 51, 51, 0.521);
+    overflow: hidden;
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0.8rem;
+}
+
+.wrapper .card a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.wrapper .card a:hover {
+    color: #fff;
+}
+
+.wrapper .card .input-field {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #eee;
+    padding: 0.3rem;
+}
+
+.wrapper .card .input-field input {
+    background-color: inherit;
+}
+
+.wrapper .card .input-field input.form-control,
+.wrapper .card .input-field input.form-control:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: #eee;
+}
+
+.wrapper .card .input-field button.btn {
+    color: #eee;
+    padding: 0rem;
+    padding-right: 0.5rem;
+}
+
+.wrapper .card .input-field button.btn:hover {
+    color: #fff;
+}
+
+.wrapper .card .input-field button.btn:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.wrapper .card .input-field input::placeholder {
+    color: #eee;
+}
+
+.wrapper .card .option {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    user-select: none
+}
+
+.wrapper .card .option span.text-light-white:hover {
+    color: #fff;
+
+}
+
+.wrapper .card .option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border-radius: 2px
+}
+
+.wrapper .card .option:hover input~.checkmark {
+    background-color: #f1f1f1
+}
+
+.wrapper .card .option input:checked~.checkmark {
+    border: none;
+    background-color: #333;
+    transition: 300ms ease-in-out all
+}
+
+.checkmark:after {
+    content: "\2713";
+    position: absolute;
+    display: none;
+    color: #fff;
+    font-size: 1rem
+}
+
+.wrapper .card .option input:checked~.checkmark:after {
+    display: block
+}
+
+.wrapper .card .option .checkmark:after {
+    left: 3px;
+    top: -3px;
+    width: 5px;
+    height: 10px
+}
+
+.wrapper .card .btn.btn-primary {
+    border-radius: 20px;
+    width: 100px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+}
+
+.wrapper .card .btn.btn-primary:hover {
+    color: #fff;
+    background: #333;
+}
+
+.wrapper .card .btn.btn-primary:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.wrapper .card .text-light-white {
+    color: #ddd;
+}
+
+.wrapper .card .line span.connect {
+    position: absolute;
+    top: -12px;
+    left: 33%;
+    color: #000;
+    padding: 0 0.3rem;
+    z-index: 100;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.wrapper .card .connections a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+@media(max-width: 370px) {
+    .wrapper .card .line:after {
+        left: 27%;
+    }
+}
+
+@media(max-width: 350px) {
+    .wrapper {
+        margin: 10px auto;
+    }
+
+    .wrapper .card {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .offcanvas {
+        background: black;
+    }
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw !important;
+    padding-top: 3rem !important;
+}
+
+#hero-home {
+    width: 100vw;
+    height: 75vh;
+    background-image: url('/public/hero-banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+#hero-home .home-hero-container {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.custom-marg {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.banner-text {
+    font-size: 62px;
+    font-weight: 700;
+    color: #9eca19;
+    text-shadow: 0 4px 0 #1f1e1d;
+    letter-spacing: 13px;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .banner-text {
+        font-size: 40px;
+        font-weight: 300;
+        color: #9eca19;
+        text-shadow: 0 4px 0 #1f1e1d;
+        letter-spacing: 3px;
+        margin: 0;
+    }
+}
+
+#custom-h4 {
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    #custom-h4 {
+        font-size: 20px;
+    }
+}
+
+.custom-text-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #9eca19;
+    text-shadow: 0 4px 0 #1f1e1d;
+    letter-spacing: 13px;
+    margin: 0;
+    padding-top: 10rem;
+}
+
+@media (max-width: 600px) {
+    .custom-text-heading {
+        font-size: 35px;
+        padding-top: 4rem;
+    }
+}
+
+.overlay {
+    position: relative;
+    z-index: 0;
+}
+
+.overlay::before {
+    position: absolute;
+    content: "";
+    background-color: #000000a4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#hero-home-2 {
+    content: "";
+    width: 100vw;
+    height: 90vh;
+    background-image: url('/public/spirit-brothers.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+#hero-home-2 .home-hero-container-2 {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.form-bottom-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+#notfound {
+    position: relative;
+    height: 80vh;
+}
+
+#notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.notfound {
+    max-width: 767px;
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.notfound .notfound-404 {
+    position: relative;
+    height: 180px;
+    margin-bottom: 20px;
+    z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50% , -50%);
+        -ms-transform: translate(-50% , -50%);
+            transform: translate(-50% , -50%);
+    font-size: 224px;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -12px;
+    color: #030005;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0px #f8f8f898, 1px 1px 0px  #dd0a0a;
+    letter-spacing: -20px;
+}
+
+.notfound .notfound-404 h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 110px;
+    font-size: 52px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 0px #bb1d1d;
+    letter-spacing: 13px;
+    margin: 0;
+}
+
+.notfound a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #bb1d1d;
+    text-decoration: none;
+    border: 2px solid;
+    background: transparent;
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.notfound a:hover {
+    color: #9eca19;
+}
+
+@media only screen and (max-width: 767px) {
+    .notfound .notfound-404 h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .notfound .notfound-404 h1 {
+        font-size: 182px;
+    }
+}
