@@ -63,7 +63,9 @@ function Home(props) {
                                     <br />
                                     <br />
                                     <div className="d-flex justify-content-center">
-                                        <Link to="/register">
+                                        <Link to="/register" onClick={() => {
+                                                props.setCurrentLink("/register");
+                                                }}>
                                             <button  className="btn btn-danger"
                                             style={{
                                                 padding:"15px 40px", fontWeight:"bold"
