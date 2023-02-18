@@ -216,7 +216,7 @@ function Home(props) {
                                                             </div>
 
                                                             <p className="text-center  mt-5 mb-0 text-light">Already have an account?{' '}
-                                                                <Link href="#" to='/404' onClick={()=>{props.setCurrentLink('/404')}}>Login here
+                                                                <Link to='/404' onClick={()=>{props.setCurrentLink('/404')}}>Login here
                                                                 </Link>
                                                             </p>
                                                         </form>
