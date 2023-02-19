@@ -3,7 +3,7 @@ import { serverRoutes } from "./const";
 export const RegisterAPI = async (username, password, fullName, email) => {
   try {
     const myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("Content-Type", "text/plain");
     const raw = JSON.stringify({
       username: username,
       password: password,
