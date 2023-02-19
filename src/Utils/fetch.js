@@ -12,8 +12,7 @@ export const RegisterAPI = (username, password, fullName, email) =>{
     var requestOptions = {
         method: 'POST',
         headers: myHeaders,
-        body: raw,
-        redirect: 'follow'
+        body: raw
     };
     return fetch(serverRoutes.Register, requestOptions)
 }
