@@ -7,7 +7,7 @@ export const RegisterAPI = (username, password, fullName, email) =>{
     "username": username,
     "password": password,
     "fullName": fullName,
-    "email": email,
+    "email": email
     });
     var requestOptions = {
         method: 'POST',
