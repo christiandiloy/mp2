@@ -9,11 +9,7 @@ function Register(props) {
     const email = document.getElementById("email").value;
     RegisterAPI(username, password, fullName, email)
         .then((result) => {
-            if (result.ok) {
-                return result.json();
-              } else {
-                throw new Error("Failed to register.");
-              }
+            return result.json();
         })
         .then((result) => {
         console.log("result: ", result);
