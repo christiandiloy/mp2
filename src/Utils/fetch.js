@@ -6,7 +6,7 @@ export const RegisterAPI = (username, password, fullName, email) =>{
     var raw = JSON.stringify({
     "username": username,
     "password": password,
-    "fullName": fullName,
+    "full_Name": fullName,
     "email": email,
     });
     var requestOptions = {
