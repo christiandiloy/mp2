@@ -1,19 +1,19 @@
-import { serverRoutes } from "./const";
+import {serverRoutes} from './const';
 
 export const RegisterAPI = async (username, password, fullName, email) => {
   try {
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "text/plain");
     const raw = JSON.stringify({
-      username: username,
-      password: password,
-      fullName: fullName,
-      email: email,
+      "username": username,
+      "password": password,
+      "fullName": fullName,
+      "email": email
     });
     const requestOptions = {
-      method: "POST",
+      method: 'POST',
       headers: myHeaders,
-      body: raw,
+      body: raw
     };
     const response = await fetch(serverRoutes.Register, requestOptions);
     if (response.ok) {
