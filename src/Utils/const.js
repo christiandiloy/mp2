@@ -1,4 +1,4 @@
-export const myExpressURL = 'http://20.211.37.87/';
+export const myExpressURL = 'https://fair-tan-piranha-sari.cyclic.app';
 
 
 export const serverRoutes = {
