@@ -42,13 +42,13 @@ function TopNavBar(props) {
                   </Link>
                         </li>
                         <li class="nav-item ">
-                        <span
+                        <Link
                     to="/register"
                     className="nav-link"
                     onClick={handleSignUpClick}
                     style={{color:"white"}}>
                     <h4>Sign Up</h4>
-                  </span>
+                  </Link>
                         </li>
                     </ul>
                 </div>
