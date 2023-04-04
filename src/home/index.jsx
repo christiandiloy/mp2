@@ -31,8 +31,7 @@ function Home(props) {
             console.log("localStorage: ", localStorage);
             if (result.success) {
               //go to dashboard / home
-              // localStorage.setItem('user', JSON.stringify(result.userData)) // put back if you want to automatically login
-              window.location.href = "https://dota2gcashstore.netlify.app/" // change to http://localhost:3000/ if you want to automatically login
+                window.location.href = "https://dota2gcashstore.netlify.app/"
             } else {
               // alert user that credentials is invalid
             }
