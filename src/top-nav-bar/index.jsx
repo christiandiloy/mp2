@@ -1,12 +1,11 @@
-import { Link } from "react-router-dom";
-import { useHistory  } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function TopNavBar(props) {
   console.log("props: ", props);
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   function handleSignUpClick() {
-    history.push("/register");
+    navigate("/register");
     props.setCurrentLink("/register");
   }
 
