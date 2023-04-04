@@ -1,10 +1,5 @@
-import { Link } from "react-router-dom";
-function TopNavBar(props) {
 
-  function handleSignUpClick() {
-    window.history.pushState(null, "", "/register");
-    props.setCurrentLink("/register");
-  }
+function TopNavBar(props) {
 
   return (
     <>
