@@ -1,4 +1,5 @@
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useHistory  } from "react-router-dom";
 function TopNavBar(props) {
   console.log("props: ", props);
 
