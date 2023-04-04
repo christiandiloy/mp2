@@ -1,11 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 function TopNavBar(props) {
-  console.log("props: ", props);
-
-  const navigate = useNavigate();
 
   function handleSignUpClick() {
-    navigate("/register");
+    window.history.pushState(null, "", "/register");
     props.setCurrentLink("/register");
   }
 
@@ -45,13 +42,13 @@ function TopNavBar(props) {
                   </Link>
                         </li>
                         <li class="nav-item ">
-                        <Link
+                        <span
                     to="/register"
                     className="nav-link"
                     onClick={handleSignUpClick}
                     style={{color:"white"}}>
                     <h4>Sign Up</h4>
-                  </Link>
+                  </span>
                         </li>
                     </ul>
                 </div>
