@@ -1,6 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 function TopNavBar(props) {
   console.log("props: ", props);
+
+  const history = useHistory();
+
+  function handleSignUpClick() {
+    history.push("/register");
+    props.setCurrentLink("/register");
+  }
 
   return (
     <>
@@ -8,7 +15,11 @@ function TopNavBar(props) {
         aria-label="Offcanvas navbar large ">
         <div class="container-fluid">
             <div class="navbar-brand">
-            <img class="branded-text" src="/dota2-logo.png" style={{paddingLeft:"5px"}} alt="logo" width="55" height="50"/>
+            <img class="branded-text" src="/dota2-logo.png" style={{paddingLeft:"5px"}} alt="logo" width="55" height="50"
+            onClick={() => {
+              props.setCurrentLink("/");
+            }}
+            />
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
                 aria-controls="offcanvasNavbar2">
@@ -37,9 +48,8 @@ function TopNavBar(props) {
                         <Link
                     to="/register"
                     className="nav-link"
-                    onClick={() => {
-                      props.setCurrentLink("/register");
-                    }} style={{color:"white"}}>
+                    onClick={handleSignUpClick}
+                    style={{color:"white"}}>
                     <h4>Sign Up</h4>
                   </Link>
                         </li>
